@@ -3,12 +3,710 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to memecoin.dev</title>
+    <title>Project Setup Plan</title>
+    <style>
+        /* Light mode (default) */
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333333;
+            --details-bg: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --step-title-color: #555555;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #ffffff;
+                --details-bg: #2d2d2d;
+                --shadow-color: rgba(255, 255, 255, 0.1);
+                --step-title-color: #cccccc;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        details {
+            background: var(--details-bg);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px var(--shadow-color);
+        }
+
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            color: var(--text-color);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .step-title {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: var(--step-title-color);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to memecoin.dev!</h1>
-    <p>Your platform for quick memecoinery.</p>
+    <h1>Project Setup Plan</h1>
+    <details>
+        <summary>1. Create a Custom Email in iCloud+</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="icloud-step1">
+                <label for="icloud-step1">Access iCloud Mail by logging in to <a href="https://www.icloud.com/"
+                        target="_blank">iCloud.com</a>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="icloud-step2">
+                <label for="icloud-step2">Navigate to <strong>Mail</strong>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="icloud-step3">
+                <label for="icloud-step3">Go to <strong>Preferences</strong> &gt; <strong>Accounts</strong>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="icloud-step4">
+                <label for="icloud-step4">Click on the <strong>Add an Alias</strong> button.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="icloud-step5">
+                <label for="icloud-step5">Enter <code>contact@memecoin.dev</code> as the alias name and save the
+                    changes.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="icloud-step6">
+                <label for="icloud-step6">*Note: This step must be performed manually as Apple does not provide a public
+                    API for managing iCloud Mail aliases.*</label>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>2. Set Up a New GitHub Account</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="github-step1">
+                <label for="github-step1">Visit <a href="https://github.com/signup" target="_blank">GitHub Sign
+                        Up</a>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="github-step2">
+                <label for="github-step2">Use <code>contact@memecoin.dev</code> as the email address.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="github-step3">
+                <label for="github-step3">Choose a username that does not reveal personal information.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="github-step4">
+                <label for="github-step4">Complete the registration process.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="github-step5">
+                <label for="github-step5">Enhance anonymity by:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="github-substep1">
+                        <label for="github-substep1">Avoid adding a profile picture or personal bio.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="github-substep2">
+                        <label for="github-substep2">Do not link other social media accounts.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="github-substep3">
+                        <label for="github-substep3">Enable <strong>Two-Factor Authentication (2FA)</strong> for added
+                            security.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="github-step6">
+                <label for="github-step6">*Note: Automating account creation on GitHub is against GitHub's Terms of
+                    Service. This step should be performed manually.*</label>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>3. Create a New Private Repository</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="repo-step1">
+                <label for="repo-step1">Choose a repository name relevant to your project, e.g.,
+                    <code>memecoin-project</code>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step2">
+                <label for="repo-step2">Initialize the repository with a <code>README.md</code> file.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step3">
+                <label for="repo-step3">Optionally, add a <code>.gitignore</code> and a license if needed.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step4">
+                <label for="repo-step4">Log in to your GitHub account.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step5">
+                <label for="repo-step5">Click the <strong>New repository</strong> button.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step6">
+                <label for="repo-step6">Enter the repository name and select <strong>Private</strong>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step7">
+                <label for="repo-step7">Click <strong>Create repository</strong>.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="repo-step8">
+                <label for="repo-step8">*Optional: Use GitHub CLI to automate repository creation (requires installation
+                    and authentication).*</label>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>4. Set Up GitHub Pages</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="pages-step1">
+                <label for="pages-step1">Choose a framework/theme for GitHub Pages:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pages-substep1">
+                        <label for="pages-substep1">Jekyll (recommended for simplicity and GitHub integration).</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pages-substep2">
+                        <label for="pages-substep2">Hugo (requires installation and setup).</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pages-substep3">
+                        <label for="pages-substep3">Custom HTML/CSS/JS (full control over design and
+                            functionality).</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="pages-step2">
+                <label for="pages-step2">Create a <code>gh-pages</code> branch:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pages-substep4">
+                        <label for="pages-substep4">Run the following commands:</label>
+                        <pre><code>git checkout -b gh-pages
+git push origin gh-pages</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="pages-step3">
+                <label for="pages-step3">Configure GitHub Pages:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="pages-substep5">
+                        <label for="pages-substep5">Navigate to your repository on GitHub.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pages-substep6">
+                        <label for="pages-substep6">Go to <strong>Settings</strong> &gt; <strong>Pages</strong>.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pages-substep7">
+                        <label for="pages-substep7">Under <strong>Source</strong>, select the <code>gh-pages</code>
+                            branch.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="pages-substep8">
+                        <label for="pages-substep8">Choose a theme if prompted.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="pages-step4">
+                <label for="pages-step4">*Optional: Use GitHub CLI to automate GitHub Pages setup.*</label>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>5. Set Up GitHub Actions for Publishing Commits</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="actions-step1">
+                <label for="actions-step1">Choose the branch to trigger GitHub Actions (recommended:
+                    <code>main</code>).</label>
+            </li>
+            <li>
+                <input type="checkbox" id="actions-step2">
+                <label for="actions-step2">Create a GitHub Actions workflow:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="actions-substep1">
+                        <label for="actions-substep1">Navigate to the <strong>Actions</strong> tab in your
+                            repository.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="actions-substep2">
+                        <label for="actions-substep2">Click on <strong>New workflow</strong>.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="actions-substep3">
+                        <label for="actions-substep3">Choose a template or set up a custom workflow.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="actions-substep4">
+                        <label for="actions-substep4">Create a file at <code>.github/workflows/deploy.yml</code> with
+                            the following content:</label>
+                        <pre><code>name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: \${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="actions-step3">
+                <label for="actions-step3">Commit and push the workflow:</label>
+                <pre><code>git add .github/workflows/deploy.yml
+git commit -m "Add GitHub Actions workflow for deployment"
+git push origin main</code></pre>
+            </li>
+            <li>
+                <input type="checkbox" id="actions-step4">
+                <label for="actions-step4">*Note: Customize the <code>Build Project</code> and <code>publish_dir</code>
+                    steps based on your project's structure.*</label>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>6. Automation Tools and Platforms Recommendations</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="tools-step1">
+                <label for="tools-step1">**GitHub CLI**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tools-substep1">
+                        <label for="tools-substep1">Description: A powerful tool to interact with GitHub from the
+                            command line.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep2">
+                        <label for="tools-substep2">Use Cases: Automate repository creation, manage issues, pull
+                            requests, and more.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep3">
+                        <label for="tools-substep3">Installation: <a href="https://cli.github.com/manual/installation"
+                                target="_blank">GitHub CLI Installation Guide</a>.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="tools-step2">
+                <label for="tools-step2">**Shell Scripting (Bash)**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tools-substep4">
+                        <label for="tools-substep4">Description: Write scripts to automate repetitive tasks on Unix-like
+                            systems.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep5">
+                        <label for="tools-substep5">Use Cases: Automate Git commands, setup workflows, etc.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep6">
+                        <label for="tools-substep6">Resources: <a
+                                href="https://www.tutorialspoint.com/unix/shell_scripting.htm" target="_blank">Bash
+                                Scripting Tutorial</a>.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="tools-step3">
+                <label for="tools-step3">**Python Scripts**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tools-substep7">
+                        <label for="tools-substep7">Description: Use Python for more complex automation tasks.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep8">
+                        <label for="tools-substep8">Use Cases: Interact with GitHub API, process data, etc.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep9">
+                        <label for="tools-substep9">Resources: <a href="https://automatetheboringstuff.com/"
+                                target="_blank">Automate the Boring Stuff with Python</a>.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="tools-step4">
+                <label for="tools-step4">**GitHub Actions**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tools-substep10">
+                        <label for="tools-substep10">Description: CI/CD platform integrated into GitHub.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep11">
+                        <label for="tools-substep11">Use Cases: Automate testing, building, and deploying your
+                            code.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep12">
+                        <label for="tools-substep12">Resources: <a href="https://docs.github.com/en/actions"
+                                target="_blank">GitHub Actions Documentation</a>.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="tools-step5">
+                <label for="tools-step5">**CI/CD Tools**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tools-substep13">
+                        <label for="tools-substep13">Examples: Jenkins, Travis CI, CircleCI.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep14">
+                        <label for="tools-substep14">Use Cases: Automate the software development lifecycle.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tools-substep15">
+                        <label for="tools-substep15">Note: GitHub Actions is often sufficient and integrates seamlessly
+                            with GitHub repositories.</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>7. Putting It All Together: Sample Automation Script</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="script-step1">
+                <label for="script-step1">**Sample Bash Script**:</label>
+                <pre><code>#!/bin/bash
+
+# Variables
+REPO_NAME="memecoin-project"
+DESCRIPTION="Enable quick memecoinery, create and make them available"
+PRIVATE=true
+GITHUB_USERNAME="your-github-username"
+PUBLISH_DIR="./public"
+
+# Create a new private repository
+gh repo create $REPO_NAME --$PRIVATE --description "$DESCRIPTION" --homepage "https://www.memecoin.dev" --confirm
+
+# Clone the repository
+git clone git@github.com:$GITHUB_USERNAME/$REPO_NAME.git
+cd $REPO_NAME
+
+# Initialize Git
+git init
+echo "# $REPO_NAME" > README.md
+git add README.md
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin git@github.com:$GITHUB_USERNAME/$REPO_NAME.git
+git push -u origin main
+
+# Create GitHub Pages branch
+gh api -X POST repos/$GITHUB_USERNAME/$REPO_NAME/pages --field source='{"branch": "main", "path": "/"}'
+
+# Create GitHub Actions workflow
+mkdir -p .github/workflows
+cat &lt;&lt;EOL > .github/workflows/deploy.yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: \${{ secrets.GITHUB_TOKEN }}
+          publish_dir: $PUBLISH_DIR
+EOL
+
+# Commit and push the workflow
+git add .github/workflows/deploy.yml
+git commit -m "Add GitHub Actions workflow for deployment"
+git push origin main
+
+echo "Repository $REPO_NAME created and configured successfully."</code></pre>
+            </li>
+            <li>
+                <input type="checkbox" id="script-step2">
+                <label for="script-step2">**Instructions to Use the Script**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="script-substep1">
+                        <label for="script-substep1">Replace <code>your-github-username</code> with your actual GitHub
+                            username.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="script-substep2">
+                        <label for="script-substep2">Make the script executable:</label>
+                        <pre><code>chmod +x setup_repo.sh</code></pre>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="script-substep3">
+                        <label for="script-substep3">Run the script:</label>
+                        <pre><code>./setup_repo.sh</code></pre>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="script-substep4">
+                        <label for="script-substep4">*Note: Ensure you have SSH keys set up for GitHub. If not, use
+                            HTTPS URLs and adjust the <code>git clone</code> and <code>git remote add origin</code>
+                            commands accordingly.*</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="script-substep5">
+                        <label for="script-substep5">Customize the <code>Build Project</code> step in the GitHub Actions
+                            workflow based on your project's specific build commands and publish directory.</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>8. Next Steps</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="next-step1">
+                <label for="next-step1">**Manual Steps to Complete**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep1">
+                        <label for="next-substep1">Create Custom Email Alias as described in Section 1.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="next-substep2">
+                        <label for="next-substep2">Set Up GitHub Account manually using the custom email.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="next-step2">
+                <label for="next-step2">**Install Required Tools**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep3">
+                        <label for="next-substep3">Install <a href="https://git-scm.com/downloads"
+                                target="_blank">Git</a>.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="next-substep4">
+                        <label for="next-substep4">Install <a href="https://cli.github.com/" target="_blank">GitHub
+                                CLI</a>.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="next-substep5">
+                        <label for="next-substep5">Install <a href="https://nodejs.org/" target="_blank">Node.js</a> if
+                            your project requires it.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="next-step3">
+                <label for="next-step3">**Run Automation Scripts**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep6">
+                        <label for="next-substep6">Use the provided Bash script to automate repository creation and
+                            setup.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="next-step4">
+                <label for="next-step4">**Customize GitHub Pages**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep7">
+                        <label for="next-substep7">Choose and apply a theme or framework that suits your project's
+                            needs.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="next-step5">
+                <label for="next-step5">**Monitor GitHub Actions**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep8">
+                        <label for="next-substep8">Ensure that your Actions workflows are running correctly upon commits
+                            to the <code>main</code> branch.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="next-step6">
+                <label for="next-step6">**Expand Automation as Needed**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="next-substep9">
+                        <label for="next-substep9">Consider automating additional tasks such as issue management, pull
+                            request reviews, or deployment to other platforms.</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Additional Recommendations</summary>
+        <ul>
+            <li>
+                <input type="checkbox" id="rec-step1">
+                <label for="rec-step1">**Version Control Best Practices**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="rec-substep1">
+                        <label for="rec-substep1">Regularly commit and push changes to your repository.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rec-substep2">
+                        <label for="rec-substep2">Use meaningful commit messages for better project tracking.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="rec-step2">
+                <label for="rec-step2">**Security Considerations**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="rec-substep3">
+                        <label for="rec-substep3">Keep your GitHub account secure with a strong password and
+                            2FA.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rec-substep4">
+                        <label for="rec-substep4">Regularly update dependencies to mitigate vulnerabilities.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="rec-step3">
+                <label for="rec-step3">**Documentation**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="rec-substep5">
+                        <label for="rec-substep5">Maintain clear documentation within your repository to facilitate
+                            collaboration and onboarding.</label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="rec-step4">
+                <label for="rec-step4">**Learning Resources**:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="rec-substep6">
+                        <label for="rec-substep6"><a href="https://lab.github.com/" target="_blank">GitHub Learning
+                                Lab</a>: Interactive tutorials on GitHub features.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rec-substep7">
+                        <label for="rec-substep7"><a href="https://docs.github.com/en/actions" target="_blank">GitHub
+                                Actions Documentation</a>: Comprehensive guide to setting up and managing Actions
+                            workflows.</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="rec-substep8">
+                        <label for="rec-substep8"><a href="https://cli.github.com/manual/" target="_blank">GitHub CLI
+                                Documentation</a>: Learn more about using GitHub CLI.</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </details>
 </body>
 
 </html>
